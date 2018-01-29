@@ -5,6 +5,27 @@
 <title>
 Aditya Nirgun
 </title>
+<script type="text/javascript">
+  var imageFiles = [
+       "images/billysdawn2.png"
+     , "images/fogvalley.png"
+	 , "images/FRACTALCANYON_colorlite.png"
+	 , "images/undergroundmaintenance.png"
+	 , "images/GENLABtestfocuspoint04.PNG"
+	 , "images/globe.jpg"
+	 , "images/gothichoodedface4.png"
+	 , "images/lightbox1000s.png"
+	 , "images/m4a3side.png"
+	 , "images/skyline_hard.png"
+  ];
+  function getImageTag() {
+    var img = '<img src=';
+    var randomIndex = Math.floor(Math.random() * imageFiles.length);
+    img += imageFiles[randomIndex];
+    img += ' width="1280" height="720" border="1" >';
+    return img;
+  }
+</script>
 </head>
 <body bgcolor="#FFFFFF">
 <table align="center">
@@ -66,11 +87,13 @@ Aditya Nirgun
               </ol>
 </td>
             <td width="55%" valign="top">
-              <div align="center"><img src="undergroundmaintenance.png" width="1280" height="720" border="1"></div>
+			<div align="center">
+				<script type="text/javascript">document.write(getImageTag());</script>
+			</div>
             </td>
           </tr>
         </table>
-        <p align="center"><script language=javascript src="/copyright.js"></script></p>
+        <p align="center"></p>
       </td>
     </tr>
 	</table>
