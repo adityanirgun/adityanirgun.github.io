@@ -7,7 +7,61 @@ words
 </title>
 </head>
 <body bgcolor="#FFFFFF">
+<p align="center" style="font-family:'Courier New'">Words</p>
+<!-- <button onclick= "openAll()">View All Papers</button> -->
+<p style="font-family:'Courier New'"<a href="index.html">Home</a></p>
+<p style="font-family:'Courier New'" onclick= "openDoc1()">Expand Paper 1</p>
+<p style="font-family:'Courier New'" onclick= "openDoc2()">Expand Paper 2</p>
+<p style="font-family:'Courier New'" onclick= "openDoc3()">Expand Paper 3</p>
+
+<div id="Doc1" class= "Paper" align= "center">
 <object width="1280" height="720" data="2001paper.pdf"></object>
+</div>
+<div id="Doc2" class= "Paper" align= "center">
 <object width="1280" height="720" data="algalphotobioreactor.pdf"></object>
+</div>
+<div id="Doc3" class= "Paper" align= "center">
 <object width="1280" height="720" data="breadfruitcarotene.pdf"></object>
+</div>
+
+<!-- <script>
+function openAll() {
+    var x = document.getElementsByClassName('Paper');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script> -->
+<script>
+function openDoc1() {
+    var x = document.getElementById('Doc1'); 
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+<script>
+function openDoc2() {
+    var x = document.getElementById('Doc2'); 
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+<script>
+function openDoc3() {
+    var x = document.getElementById('Doc3'); 
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
 </body>
