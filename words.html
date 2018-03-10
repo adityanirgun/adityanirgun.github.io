@@ -10,9 +10,9 @@ words
 <p align="center" style="font-family:'Courier New'">Words</p>
 <!-- <button onclick= "openAll()">View All Papers</button> -->
 <p style="font-family:'Courier New'"><a href="index.html">Home</a></p>
-<p style="font-family:'Courier New'" onclick= "openDoc1()">Expand Paper 1</p>
-<p style="font-family:'Courier New'" onclick= "openDoc2()">Expand Paper 2</p>
-<p style="font-family:'Courier New'" onclick= "openDoc3()">Expand Paper 3</p>
+<p id = "button1" style="font-family:'Courier New'" onclick= "openDoc1()">Collapse Film Paper</p>
+<p id = "button2" style="font-family:'Courier New'" onclick= "openDoc2()">Collapse Algal Photobioreactor Design Writeup</p>
+<p id = "button3" style="font-family:'Courier New'" onclick= "openDoc3()">Collapse Genetic Modification of Breadfruit Design</p>
 
 <div id="Doc1" class= "Paper" align= "center">
 <object width="1280" height="720" data="2001paper.pdf"></object>
@@ -37,31 +37,50 @@ function openAll() {
 <script>
 function openDoc1() {
     var x = document.getElementById('Doc1'); 
+	var y = document.getElementById('button1');
     if (x.style.display === 'none') {
         x.style.display = 'block';
+		y.innerHTML = 'Collapse Film Paper';
+		y.style.fontWeight = "normal";
+
     } else {
         x.style.display = 'none';
+		y.innerHTML = 'Expand Film Paper';
+		y.style.fontWeight = "bold";
+		
     }
 }
 </script>
 <script>
 function openDoc2() {
     var x = document.getElementById('Doc2'); 
+	var y = document.getElementById('button2');
     if (x.style.display === 'none') {
         x.style.display = 'block';
+		y.innerHTML = 'Collapse Algal Photobioreactor Design Writeup';
+		y.style.fontWeight = "normal";
+
     } else {
         x.style.display = 'none';
+		y.innerHTML = 'Expand Algal Photobioreactor Design Writeup';
+		y.style.fontWeight = "bold";
+		
     }
 }
 </script>
 <script>
 function openDoc3() {
-    var x = document.getElementById('Doc3'); 
+    var x = document.getElementById('Doc3');
+	var y = document.getElementById('button3');
     if (x.style.display === 'none') {
         x.style.display = 'block';
+		y.innerHTML = 'Collapse Genetic Modification of Breadfruit Design';
+		y.style.fontWeight = "normal";
+
     } else {
         x.style.display = 'none';
+		y.innerHTML = 'Expand Genetic Modification of Breadfruit Design';
+		y.style.fontWeight = "bold";
     }
 }
 </script>
-</body>
