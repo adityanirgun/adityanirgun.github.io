@@ -13,6 +13,9 @@ words
 <p id = "button1" style="font-family:'Courier New'" onclick= "openDoc1()">Collapse Film Paper</p>
 <p id = "button2" style="font-family:'Courier New'" onclick= "openDoc2()">Collapse Algal Photobioreactor Design Writeup</p>
 <p id = "button3" style="font-family:'Courier New'" onclick= "openDoc3()">Collapse Genetic Modification of Breadfruit Design</p>
+<p id = "button4" style="font-family:'Courier New'" onclick= "openDoc4()">Collapse Agrobacterium Transformation of Rice for Drought Tolerance</p>
+<p id = "button5" style="font-family:'Courier New'" onclick= "openDoc5()">Collapse MATLAB Digital Audio Synthesizer and Sampler</p>
+<p id = "button6" style="font-family:'Courier New'" onclick= "openDoc6()">Collapse Internet Technology Blog Post</p>
 
 <div id="Doc1" class= "Paper" align= "center">
 <object width="1280" height="720" data="2001paper.pdf"></object>
@@ -22,6 +25,15 @@ words
 </div>
 <div id="Doc3" class= "Paper" align= "center">
 <object width="1280" height="720" data="breadfruitcarotene.pdf"></object>
+</div>
+<div id="Doc4" class= "Paper" align= "center">
+<object width="1280" height="720" data="BIT160DroughtResistantRice.pdf"></object>
+</div>
+<div id="Doc5" class= "Paper" align= "center">
+<object width="1280" height="720" data="MatlabReport.pdf"></object>
+</div>
+<div id="Doc6" class= "Paper" align= "center">
+<object width="1280" height="720" data="TheInternetHasAnswers.pdf"></object>
 </div>
 
 <!-- <script>
@@ -80,6 +92,54 @@ function openDoc3() {
     } else {
         x.style.display = 'none';
 		y.innerHTML = 'Expand Genetic Modification of Breadfruit Design';
+		y.style.fontWeight = "bold";
+    }
+}
+</script>
+<script>
+function openDoc4() {
+    var x = document.getElementById('Doc4');
+	var y = document.getElementById('button4');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Agrobacterium Transformation of Rice for Drought Tolerance';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Agrobacterium Transformation of Rice for Drought Tolerance';
+		y.style.fontWeight = "bold";
+    }
+}
+</script>
+<script>
+function openDoc5() {
+    var x = document.getElementById('Doc5');
+	var y = document.getElementById('button5');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse MATLAB Digital Audio Synthesizer and Sampler';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand MATLAB Digital Audio Synthesizer and Sampler';
+		y.style.fontWeight = "bold";
+    }
+}
+</script>
+<script>
+function openDoc6() {
+    var x = document.getElementById('Doc6');
+	var y = document.getElementById('button6');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Internet Technology Blog Post';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Internet Technology Blog Post';
 		y.style.fontWeight = "bold";
     }
 }
