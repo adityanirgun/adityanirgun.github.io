@@ -16,6 +16,12 @@ words
 <p id = "button4" style="font-family:'Courier New'" onclick= "openDoc4()">Collapse Agrobacterium Transformation of Rice for Drought Tolerance</p>
 <p id = "button5" style="font-family:'Courier New'" onclick= "openDoc5()">Collapse MATLAB Digital Audio Synthesizer and Sampler</p>
 <p id = "button6" style="font-family:'Courier New'" onclick= "openDoc6()">Collapse Internet Technology Blog Post</p>
+<p id = "button7" style="font-family:'Courier New'" onclick= "openDoc7()">Collapse Bioinformatics Approach to Designing Degenerate Primers</p>
+<p id = "button8" style="font-family:'Courier New'" onclick= "openDoc8()">Collapse Profiling RNA Transcript Expression with Microarray Databases</p>
+<p id = "button9" style="font-family:'Courier New'" onclick= "openDoc9()">Collapse Insertional T-DNA Mutagenesis for Identifying NHX genes in Arabidopsis Thaliana</p>
+<p id = "button10" style="font-family:'Courier New'" onclick= "openDoc10()">Collapse Validating the Presence of Chimeric Protein in Tobacco</p>
+<p id = "button11" style="font-family:'Courier New'" onclick= "openDoc11()">Collapse Plant Cell Expansion in Response to Auxin and Water Potential</p>
+<p id = "button12" style="font-family:'Courier New'" onclick= "openDoc12()">Collapse Phytochrome Functionality in Seed and Seedling Photomorphogensis</p>
 
 <div id="Doc1" class= "Paper" align= "center">
 <object width="1280" height="720" data="2001paper.pdf"></object>
@@ -35,6 +41,25 @@ words
 <div id="Doc6" class= "Paper" align= "center">
 <object width="1280" height="720" data="TheInternetHasAnswers.pdf"></object>
 </div>
+<div id="Doc7" class= "Paper" align= "center">
+<object width="1280" height="720" data="161Experiment1.pdf"></object>
+</div>
+<div id="Doc8" class= "Paper" align= "center">
+<object width="1280" height="720" data="161Experiment3.pdf"></object>
+</div>
+<div id="Doc9" class= "Paper" align= "center">
+<object width="1280" height="720" data="161Experiment5.pdf"></object>
+</div>
+<div id="Doc10" class= "Paper" align= "center">
+<object width="1280" height="720" data="161Experiment4.pdf"></object>
+</div>
+<div id="Doc11" class= "Paper" align= "center">
+<object width="1280" height="720" data="100BLLab4.pdf"></object>
+</div>
+<div id="Doc12" class= "Paper" align= "center">
+<object width="1280" height="720" data="100BLLab6.pdf"></object>
+</div>
+
 
 <!-- <script>
 function openAll() {
@@ -46,6 +71,7 @@ function openAll() {
     }
 }
 </script> -->
+
 <script>
 function openDoc1() {
     var x = document.getElementById('Doc1'); 
@@ -144,3 +170,99 @@ function openDoc6() {
     }
 }
 </script>
+<script>
+function openDoc7() {
+    var x = document.getElementById('Doc7'); 
+	var y = document.getElementById('button7');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Bioinformatics Approach to Designing Degenerate Primers';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Bioinformatics Approach to Designing Degenerate Primers';
+		y.style.fontWeight = "bold";
+		
+    }
+}
+<script>
+function openDoc8() {
+    var x = document.getElementById('Doc8'); 
+	var y = document.getElementById('button8');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Profiling RNA Transcript Expression with Microarray Databases';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Profiling RNA Transcript Expression with Microarray Databases';
+		y.style.fontWeight = "bold";
+		
+    }
+}
+<script>
+function openDoc9() {
+    var x = document.getElementById('Doc9'); 
+	var y = document.getElementById('button9');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Insertional T-DNA Mutagenesis for Identifying NHX genes in Arabidopsis Thaliana';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Insertional T-DNA Mutagenesis for Identifying NHX genes in Arabidopsis Thaliana';
+		y.style.fontWeight = "bold";
+		
+    }
+}
+<script>
+function openDoc10() {
+    var x = document.getElementById('Doc10'); 
+	var y = document.getElementById('button10');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Validating the Presence of Chimeric Protein in Tobacco';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Validating the Presence of Chimeric Protein in Tobacco';
+		y.style.fontWeight = "bold";
+		
+    }
+}
+<script>
+function openDoc11() {
+    var x = document.getElementById('Doc11'); 
+	var y = document.getElementById('button11');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Plant Cell Expansion in Response to Auxin and Water Potential';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Plant Cell Expansion in Response to Auxin and Water Potential';
+		y.style.fontWeight = "bold";
+		
+    }
+}
+<script>
+function openDoc12() {
+    var x = document.getElementById('Doc12'); 
+	var y = document.getElementById('button12');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Phytochrome Functionality in Seed and Seedling Photomorphogensis';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Phytochrome Functionality in Seed and Seedling Photomorphogensis';
+		y.style.fontWeight = "bold";
+		
+    }
+}
