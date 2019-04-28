@@ -22,6 +22,8 @@ words
 <p id = "button10" style="font-family:'Courier New'" onclick= "openDoc10()">Collapse Validating the Presence of Chimeric Protein in Tobacco</p>
 <p id = "button11" style="font-family:'Courier New'" onclick= "openDoc11()">Collapse Plant Cell Expansion in Response to Auxin and Water Potential</p>
 <p id = "button12" style="font-family:'Courier New'" onclick= "openDoc12()">Collapse Phytochrome Functionality in Seed and Seedling Photomorphogensis</p>
+<p id = "button13" style="font-family:'Courier New'" onclick= "openDoc13()">Collapse Ideal Post Harvest Conditions for Preserving Seed and Grain</p>
+<p id = "button14" style="font-family:'Courier New'" onclick= "openDoc14()">Collapse Fruit Load Experiment</p>
 
 <div id="Doc1" class= "Paper" align= "center">
 <object width="1280" height="720" data="2001paper.pdf"></object>
@@ -58,6 +60,12 @@ words
 </div>
 <div id="Doc12" class= "Paper" align= "center">
 <object width="1280" height="720" data="100BLLab6.pdf"></object>
+</div>
+<div id="Doc13" class= "Paper" align= "center">
+<object width="1280" height="720" data="100BLLab8.pdf"></object>
+</div>
+<div id="Doc14" class= "Paper" align= "center">
+<object width="1280" height="720" data="100BLLab7.pdf"></object>
 </div>
 
 
@@ -262,6 +270,38 @@ function openDoc12() {
     } else {
         x.style.display = 'none';
 		y.innerHTML = 'Expand Phytochrome Functionality in Seed and Seedling Photomorphogensis';
+		y.style.fontWeight = "bold";
+		
+    }
+}
+<script>
+function openDoc13() {
+    var x = document.getElementById('Doc13'); 
+	var y = document.getElementById('button13');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Ideal Post Harvest Conditions for Preserving Seed and Grain';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Ideal Post Harvest Conditions for Preserving Seed and Grain';
+		y.style.fontWeight = "bold";
+		
+    }
+}
+<script>
+function openDoc14() {
+    var x = document.getElementById('Doc14'); 
+	var y = document.getElementById('button14');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Fruit Load Experiment';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Fruit Load Experiment';
 		y.style.fontWeight = "bold";
 		
     }
