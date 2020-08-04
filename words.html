@@ -26,6 +26,7 @@ words
 <p id = "button14" style="font-family:'Courier New'" onclick= "openDoc14()">Collapse Fruit Load Experiment</p>
 <p id = "button15" style="font-family:'Courier New'" onclick= "openDoc15()">Collapse Basking Shark Article</p>
 <p id = "button16" style="font-family:'Courier New'" onclick= "openDoc16()">Collapse Khezri Plain Article</p>
+<p id = "button17" style="font-family:'Courier New'" onclick= "openDoc17()">Collapse Drought Responses in Two Varieties of Wheat</p>
 
 <div id="Doc1" class= "Paper" align= "center">
 <object width="1280" height="720" data="2001paper.pdf"></object>
@@ -75,6 +76,10 @@ words
 <div id="Doc16" class= "Paper" align= "center">
 <object width="1280" height="720" data="environagarticle.pdf"></object>
 </div>
+<div id="Doc17" class= "Paper" align= "center">
+<object width="1280" height="720" data="100CLFinal.pdf"></object>
+</div>
+
 
 <!-- <script>
 function openAll() {
@@ -350,6 +355,23 @@ function openDoc16() {
     } else {
         x.style.display = 'none';
 		y.innerHTML = 'Expand Khezri Plain Article';
+		y.style.fontWeight = "bold";
+		
+    }
+}
+</script>
+<script>
+function openDoc16() {
+    var x = document.getElementById('Doc16'); 
+	var y = document.getElementById('button16');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+		y.innerHTML = 'Collapse Drought Responses in Two Varieties of Wheat';
+		y.style.fontWeight = "normal";
+
+    } else {
+        x.style.display = 'none';
+		y.innerHTML = 'Expand Drought Responses in Two Varieties of Wheat';
 		y.style.fontWeight = "bold";
 		
     }
