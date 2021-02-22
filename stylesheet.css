@@ -22,7 +22,8 @@ p {
 }
 .flex-container > div {
 	display:flex;
-	background-color: white;
+	background-color: black;
+	color: lime;
 	font-family: 'Courier New';
 	padding: 10px;
 }
